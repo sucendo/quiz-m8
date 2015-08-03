@@ -1,0 +1,15 @@
+<label for="preg" class="rem">Pregunta:</label>
+<input type="text" id="preg" name="quiz[pregunta]" value="<%= quiz.pregunta %>"/> <p>
+<label for="resp" class="rem">Respuesta:</label>
+<input type="text" id="resp" name="quiz[respuesta]" value="<%= quiz.respuesta%>"/> <p>
+<label for="cas" class="rem">Casa:</label>
+ <select name="quiz[casa]">
+  <option value="Stark" <%= quiz.casa=="Stark"?"selected":"" %>>Stark</option>
+  <option value="Targaryen" <%= quiz.casa=="Targaryen"?"selected":"" %>>Targaryen</option>
+  <option value="Greyjoy" <%= quiz.casa=="Greyjoy"?"selected":"" %>>Greyjoy</option>
+  <option value="Lannister" <%= quiz.casa=="Lannister"?"selected":"" %>>Lannister</option>
+  <option value="Bolton" <%= quiz.casa=="Bolton"?"selected":"" %>>Bolton</option>
+  <option value="Dios rojo" <%= quiz.casa=="Dios rojo"?"selected":"" %>>Dios Rojo</option>
+</select> <p>
+<a href="/quizes"><button type="button">Cancelar</button></a>
+<input type="submit" value="Salvar"> 
